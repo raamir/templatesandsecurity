@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-info">
+
+<div class="panel-heading"><h2>Item</h2></div>
+
+<div class="panel-body">
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+
+<p>
+  <strong>Amount:</strong>
+  <%= @item.amount %>
+</p>
+
+
+</div>
+
+<div class="panel-footer">
+
+<%= link_to 'Edit', edit_item_path(@item) ,class:"btn btn-xs btn-primary" %> |
+<%= link_to 'Back', items_path , class:"btn btn-xs btn-danger" %>
+
+</div></div>
